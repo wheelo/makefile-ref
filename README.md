@@ -1,1 +1,1 @@
-this is a collection of some useful makefile
+a collection of some useful makefile

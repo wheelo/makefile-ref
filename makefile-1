@@ -1,0 +1,19 @@
+TARGETS = xxxx
+
+CROSS_TOOL = 
+CC_CPP = $(CROSS_TOOL)gcc
+
+CFLAGS = -Wall -g -std=c99 -Werror
+
+all: clean $(TARGETS)
+
+$(TARGETs):
+	$(CC_C) $(CFLAGS) $@.o -o $@
+
+
+clean:
+    rm *o $(TARGET)
+
+
+
+

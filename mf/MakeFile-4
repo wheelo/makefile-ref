@@ -1,0 +1,15 @@
+CC = gcc
+ 
+.SUFFIXES: .c .o
+ 
+.c.o:
+        $(CC) -c -o $@ $^
+ 
+#--------------------------
+ 
+# helloworld is a binary file
+helloworld: test.o
+        echo $@
+        $(CC) -o $@ $^
+ 
+test.o: test.c
